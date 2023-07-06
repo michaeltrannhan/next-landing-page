@@ -44,7 +44,7 @@ export default function Home() {
                     className="flex flex-col items-center justify-center gap-6"
                     ref={ref}>
                     <motion.div
-                      className="text-xl sm:text-3xl md:text-6xl h-full text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                      className="text-xl sm:text-3xl  md:text-6xl h-full p-4 text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
                       initial={{
                         opacity: 0,
                         x: -200,
@@ -148,6 +148,7 @@ export default function Home() {
                     style={{
                       position: "absolute",
                       objectFit: "cover",
+                      borderRadius: "24px 0 24px 24px",
                     }}
                   />
                 </div>
