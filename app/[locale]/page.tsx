@@ -54,7 +54,7 @@ export default function Home() {
                       transition={{
                         duration: 1.5,
                         ease: "circIn",
-                        type: "spring",
+                        type: "keyframes",
                       }}
                       ref={ref}
                       viewport={{ once: false }}>
