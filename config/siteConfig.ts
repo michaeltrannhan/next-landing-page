@@ -22,11 +22,19 @@ export const NavigationLink: NavConfig = {
     },
     {
       title: "About",
-      href: "/about",
+      href: "/",
     },
     {
       title: "Services",
-      href: "/services",
+      href: "/",
+    },
+    {
+      title: "Contact",
+      href: "/",
+    },
+    {
+      title: "Business Incubation",
+      href: "/",
     },
   ],
 };
