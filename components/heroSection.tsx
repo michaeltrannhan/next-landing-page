@@ -11,36 +11,52 @@ const HeroSection = (props: Props) => {
         <motion.div
           className="text2xl sm:text-3xl m-0 font-serif font-extralight"
           whileHover={{ scale: [null, 1.5, 1.3] }}
-          transition={{ duration: 0.7 }}>
+          transition={{ duration: 1 }}>
           {t("title-1")}
         </motion.div>
         <motion.div
-          className="text-xl sm:text-4xl md:text-5xl font-extrabold m-0 max-[480]:m-1 sm:m-2 md:m-16 bg-clip-text bg-gradient-to-r text-transparent from-indigo-500 to-pink-500"
+          className="text-xl sm:text-4xl md:text-5xl p-[10px] font-extrabold m-0 max-[480]:m-1 sm:m-2 md:mt-8 md:mb-4 bg-clip-text bg-gradient-to-r text-transparent from-indigo-500 to-pink-500"
           initial={{
             opacity: 0,
             x: -200,
             scale: 0.4,
           }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
-          whileHover={{ scale: [null, 1.5, 1.3] }}
+          // whileHover={{ scale: [null, 1.5, 1.3] }}
           transition={{
-            duration: 1.5,
+            duration: 1,
             ease: "linear",
             type: "keyframes",
           }}
           viewport={{ once: false }}>
           {t("title-2")}
         </motion.div>
-        <div className="text-lg sm:text-2xl md:text-3xl">X</div>
         <motion.div
-          className="text-xl sm:text-4xl md:text-5xl font-extrabold m-0 sm:m-2 max-[480]:m-1 md:m-16 bg-clip-text bg-gradient-to-r text-transparent from-indigo-500 to-pink-500"
+          className="text-lg sm:text-2xl md:text-3xl"
           initial={{
             opacity: 0,
             x: -200,
             scale: 0.4,
           }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
-          whileHover={{ scale: [null, 1.5, 1.4] }}
+          // whileHover={{ scale: [null, 1.5, 1.4] }}
+          transition={{
+            duration: 1,
+            ease: "linear",
+            type: "keyframes",
+          }}
+          viewport={{ once: false }}>
+          X
+        </motion.div>
+        <motion.div
+          className="text-xl sm:text-4xl p-2 md:text-5xl font-extrabold m-0 sm:m-2 max-[480]:m-1 md:mt-4 bg-clip-text bg-gradient-to-r text-transparent from-indigo-500 to-pink-500"
+          initial={{
+            opacity: 0,
+            x: -200,
+            scale: 0.4,
+          }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          // whileHover={{ scale: [null, 1.5, 1.4] }}
           transition={{
             duration: 1.5,
             ease: "circIn",
