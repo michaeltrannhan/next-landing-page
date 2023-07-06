@@ -44,7 +44,7 @@ export default async function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
           <NextIntlClientProvider locale={params.locale} messages={messages}>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
@@ -52,7 +52,7 @@ export default async function RootLayout({
               <SiteFooter />
             </div>
           </NextIntlClientProvider>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -81,11 +81,11 @@ export function NavigationMenuDemo() {
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title={t("subservices.sds")}>
+                <ListItem href="/" title={t("subservices.sds")}>
                   {t("subservices.subsubtext1")}
                 </ListItem>
                 <ListItem
-                  href="/docs/primitives/typography"
+                  href="//primitives/typography"
                   title={t("subservices.rets")}>
                   {t("subservices.subsubtext2")}
                 </ListItem>
@@ -94,28 +94,28 @@ export function NavigationMenuDemo() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("business")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("management")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("contact")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("careers")}
                 {/* <Moon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" /> */}
