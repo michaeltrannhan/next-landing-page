@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // i18n: {
+  //   locales: ["en", "ja"],
+  //   defaultLocale: "en",
+  //   localeDetection: false,
+  // },
+  images: {
+    domains: ["source.unsplash.com"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

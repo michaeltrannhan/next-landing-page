@@ -1,0 +1,54 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "business": "Business Incubation",
+    "management": "Management",
+    "contact": "Contact",
+    "careers": "Careers",
+    "subservices": {
+      "sds": "Software Development Support",
+      "rets": "Real Estate Tokenization Services",
+      "subsubtext1": "A place to shape your ideas",
+      "subsubtext2": "Help you tokenize your real estate assets"
+    },
+    "desc": "Software development support for your business"
+  },
+  "Language": {
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "Hero": {
+    "title-1": "Stay Competitive with our",
+    "title-2": "Design Sprint",
+    "title-3": "Dev Team Rental",
+    "title-4": "Our Software Development Support",
+
+    "title-5": "Do you have a software prototype/MVP you want to build but resources are limited?",
+    "title-6": "Do you want to be confident in designing UI for your new service?",
+    "title-end": "We are here for you.",
+    "title-end-1": "We offer industry's lowest price for software development team rental.",
+    "title-end-2": "Combine it with our design thinking workshop \"Design Sprint\", you will be able to quickly launch your new service with a confidence in UI design."
+  },
+  "DesignSprint": {
+    "title": "Design Sprint",
+    "desc": "Design Sprint is a method considered to be the best practice when designing products/services.",
+    "desc1": "Our Design Sprint will be taught by our design thinking consultant who has experience conducting Design Sprints at Apple. Our Design Sprint involves identifying issues, user persona analysis, creating prototype, and brush-up using feedbacks.",
+    "desc2": "The output of our design sprint is a UI blueprint, which enables software developers to quickly and effectively build a software. Therefore, Design Sprint is crucial for startups and new business development functions to make your ideas come to life in most efficient and effective manner."
+  },
+  "SDTR": {
+    "title": "Software Development Team Rental",
+    "desc": "Using an ordinary software development outsourcing can be very expensive, the cost can reach a few million JPY very easily. This high cost often acts as a bareer to make ideas come to life for many startups and new business development functions. Canaan Advisors will break that bareer and enable you to build a software development team for the lowest price in the industry.",
+    "desc1": "We achieve the starting price of 280,000 JPY by teaming up our bilingual CTO (Chief Technology Officer) and PM (Project Manager) with our off-shore SE (Software Engineers). This will also enable smooth communication within the team, keeping high efficiency of the team-work."
+  },
+  "footer": {
+    "title": "Contact us for inquiries or to obtain a cost estimate",
+    "btn": "Contact Us",
+    "copyright": "©2023 by Canaan Advisors, Inc. | ケイナン・アドバイザーズ株式会社",
+    "privacy": "Privacy Policy"
+  }
+}
