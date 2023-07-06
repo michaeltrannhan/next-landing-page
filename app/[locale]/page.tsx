@@ -36,7 +36,7 @@ export default function Home() {
             duration: 1.2,
             type: "tween",
           }}>
-          <div className="absolute w-full h-full flex justify-center align-middle bg-white p-2 gap-4 rounded-3xl">
+          <div className="absolute w-full h-full flex justify-center align-middle bg-white gap-4 rounded-3xl">
             <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full rounded-3xl">
               <div className="grid rounded-3xl">
                 <div className="container max-w-lg flex flex-col items-end justify-center">
@@ -44,46 +44,54 @@ export default function Home() {
                     className="flex flex-col items-center justify-center gap-6"
                     ref={ref}>
                     <motion.div
-                      className="text-xl sm:text-3xl  md:text-6xl h-full p-4 text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                      className="text-xl sm:text-2xl text-black md:text-5xl h-full p-4 text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
                       initial={{
                         opacity: 0,
-                        x: -200,
+                        x: 100,
                         scale: 0.4,
                       }}
-                      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                      whileInView={{ opacity: 1, x: 0, scale: 1.5 }}
                       transition={{
                         duration: 1.5,
                         ease: "circIn",
                         type: "keyframes",
                       }}
+                      ref={ref}
                       viewport={{ once: false }}>
                       {t("title")}
                     </motion.div>
+                    {/* <div className="text-lg text-black font-sans text-justify font-thin">
+                      {t("desc")}
+                    </div> */}
                     <motion.div
-                      className="text-lg font-sans text-justify font-thin break-normal"
+                      className="text-lg text-black font-sans text-justify font-thin break-normal"
                       initial={{
                         opacity: 0,
-                        x: -400,
+                        x: 300,
                         scale: 0.2,
                       }}
                       whileInView={{ opacity: 1, x: 0, scale: 1 }}
                       transition={{
-                        duration: 1.6,
+                        duration: 1.2,
+                        ease: "circIn",
+
                         type: "tween",
                       }}
                       viewport={{ once: false }}>
                       {t("desc")}
                     </motion.div>
                     <motion.div
-                      className="text-lg font-sans text-justify font-thin break-normal"
+                      className="text-lg text-black font-sans text-justify font-thin break-normal"
                       initial={{
                         opacity: 0,
-                        x: -400,
+                        x: 200,
                         scale: 0.2,
                       }}
                       whileInView={{ opacity: 1, x: 0, scale: 1 }}
                       transition={{
-                        duration: 1.6,
+                        duration: 1.2,
+                        ease: "circIn",
+
                         type: "tween",
                       }}
                       viewport={{ once: false }}>
@@ -93,12 +101,12 @@ export default function Home() {
                       className="text-lg font-sans text-justify font-thin break-normal"
                       initial={{
                         opacity: 0,
-                        x: -400,
+                        x: 200,
                         scale: 0.2,
                       }}
                       whileInView={{ opacity: 1, x: 0, scale: 1 }}
                       transition={{
-                        duration: 1.6,
+                        duration: 1.2,
                         type: "tween",
                       }}
                       viewport={{ once: false }}>
@@ -159,7 +167,7 @@ export default function Home() {
                     className="flex flex-col items-center justify-end gap-6"
                     ref={ref}>
                     <motion.div
-                      className="text-xl sm:text-3xl md:text-6xl text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                      className="text-xl sm:text-3xl md:text-5xl text-transparent font-sans text-center font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
                       initial={{
                         opacity: 0,
                         x: -100,
