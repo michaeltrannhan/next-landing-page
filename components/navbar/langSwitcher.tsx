@@ -9,7 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Languages } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -25,13 +25,13 @@ export function LanguageSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-fit">
         <DropdownMenuCheckboxItem checked={pathName === "/" ? true : false}>
-          <Link href="/" locale="en" className="text-center">
+          <Link href="/" className="text-center">
             {t("en")}
           </Link>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
           checked={pathName.includes("ja") ? true : false}>
-          <Link href="/" locale="ja">
+          <Link href="/ja">
             {t("ja")}
           </Link>
         </DropdownMenuCheckboxItem>

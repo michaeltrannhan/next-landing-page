@@ -6,7 +6,6 @@ import { fontSans } from "@/lib/fonts";
 import SiteFooter from "@/components/siteFooter";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { StringToBoolean } from "class-variance-authority/dist/types";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,16 +25,17 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   let messages;
   try {
-    messages = (await import(`../../messages/${params.locale}.json`)).default;
+    messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
     console.log(error);
   }
   return (
-    <html lang={params.locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
@@ -45,7 +45,7 @@ export default async function RootLayout({
           fontSans.variable
         )}>
         {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
-          <NextIntlClientProvider locale={params.locale} messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <div className="flex-1">{children}</div>
